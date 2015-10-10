@@ -1,0 +1,174 @@
+
+#text {
+  font-family: Vizilo;
+}
+#text_body{
+  font-family: Vizilo;
+  -webkit-text-shadow: 1px 1px 1px #fff;
+  -moz-text-shadow: 1px 1px 1px #fff;
+}
+#title{
+  font-family: Vizilo-title;
+  text-shadow: 1px 1px 1px #fff;
+  -webkit-text-shadow: 1px 1px 1px #fff;
+  -moz-text-shadow: 1px 1px 1px #fff;
+}
+#heading  button {
+  clear: both;
+  z-index: 100;
+  margin: 1em auto;
+  display: block;
+  font-family: Vizilo-title;
+  border: none;
+  font-size: 30px;
+  background: transparent;
+  color: #330;
+  text-shadow: 0 0 .3em white;
+}
+#heading_2  button {
+  clear: both;
+  z-index: 100;
+  margin: 1em auto;
+  display: block;
+  font-family: Vizilo-title;
+  border: none;
+  font-size: 30px;
+  background: transparent;
+  color: #330;
+  text-shadow: 0 0 .3em white;
+}
+/*trying out a new method thhat animates the  divs */
+
+.tabellainizio {
+  margin-top:100px;
+}
+.bordini {
+  border: 1px #DDD solid;
+}
+.principale {
+    height: 240px;
+    width: 210px;
+    position: relative;
+}
+.principale .contenitore {
+    background-color: #fff;
+    height: 240px;
+    width: 210px;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+}
+.immagine {
+    border: 1px solid maroon;
+    margin: 15px auto;
+    height: 168px;
+    width: 168px;
+  position:relative;
+}
+.content {
+    display: none;
+    margin: 15px;
+}
+.contenitore:hover {
+
+}
+.contenitore:hover .content {
+    display: block;
+}
+.contenitore:hover .immagine {
+  position:relative;
+}
+
+/*end of the floating divs */
+
+/*custom font for the website */
+@font-face {
+    font-family: Vizilo-title;
+    src: url(SpireAlt.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Vizilo;
+    src: url(Comfortaa-Bold.ttf);
+  
+}
+/*end of custom font */
+
+
+/* heading for the site */
+.section h1, .section h3{
+  text-align:center;
+}
+.section h1{
+  font-size:110px;
+  font-weight:bold;
+  text-transform: uppercase;
+  margin: 0px auto 0px;
+  text-shadow: 1px 1px 1px #fff;
+  -webkit-text-shadow: 1px 1px 1px #fff;
+  -moz-text-shadow: 1px 1px 1px #fff;
+}
+.section h3{
+  font-size: 60px;
+  font-weight:lighter; 
+  margin: 0px auto 15px;
+}
+/* end of the heading for the site */
+
+/* the coluoum and other text for the page */
+.column p{
+font-family: Vizilo;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align:center;
+  color:black;
+  left: 17em;
+  top: 7em;
+  text-align: center;
+}
+
+.column {
+  text-shadow: 1px 1px 1px #fff;
+  -webkit-text-shadow: 1px 1px 1px #fff;
+  -moz-text-shadow: 1px 1px 1px #fff;
+  background-color: rgba(6, 0, 4, 0);
+  text-align: center;
+}
+/* end of text for the page */
+
+/*back up css for background video */
+.video {
+  position: fixed; z-index: -99; width: 100%; height: 100%;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: url(resources\mediacentercontrol.png);
+  background-size: cover;
+}
+/*end of background video backup css */
+.more-info{
+  margin: 5em 0;
+  display: block;
+  text-align: center;
+  clear: both;
+}
+
+ /* maximum picture hieght and width for the site */
+ img#pic {
+    max-width: 100%;
+    max-height: 100%;
+  }
+   .logo img {
+  height: 100px;
+    width: 100px;
+  }
+img#pic1 {
+    max-width: 50%;
+    max-height: 50%;
+  }
+  /*removed a change */
+  /* css for the button on first page */
+      #butin{ {background-color:rgba(255,0,0,.1);}}
+
