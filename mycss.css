@@ -7,7 +7,7 @@
   -webkit-text-shadow: 1px 1px 1px #fff;
   -moz-text-shadow: 1px 1px 1px #fff;
 }
-#title{
+.title{
   font-family: Vizilo-title;
   text-shadow: 1px 1px 1px #fff;
   -webkit-text-shadow: 1px 1px 1px #fff;
@@ -38,6 +38,12 @@
   text-shadow: 0 0 .3em white;
 }
 /*trying out a new method thhat animates the  divs */
+
+#main_background { background: navy; } 
+#column1 { background: #000000; }
+#column2 { background: #8A0000; }
+#column3 { background: navy; }
+#column4 { background: white; }
 
 .tabellainizio {
   margin-top:100px;
@@ -101,7 +107,7 @@
   text-align:center;
 }
 .section h1{
-  font-size:110px;
+  font-size: 50px;
   font-weight:bold;
   text-transform: uppercase;
   margin: 0px auto 0px;
@@ -110,7 +116,8 @@
   -moz-text-shadow: 1px 1px 1px #fff;
 }
 .section h3{
-  font-size: 60px;
+  color: #000;
+  font-size: 20px;
   font-weight:lighter; 
   margin: 0px auto 15px;
 }
@@ -144,7 +151,7 @@ font-family: Vizilo;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  background: url(resources\mediacentercontrol.png);
+  background: url(resource/mediacentercontrol.png);
   background-size: cover;
 }
 /*end of background video backup css */
@@ -154,20 +161,86 @@ font-family: Vizilo;
   text-align: center;
   clear: both;
 }
+button {
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+table {
+  width: 100%;
+  border: 2px solid black;
+  border-spacing: 1px;
+}
+th,td {
+  text-align: center;
+  height: 30px;
+  border: 2px solid black;
+
+}
+th {
+  font-size: 25px;
+}
+td {
+  font-size: 20px;
+}
 
  /* maximum picture hieght and width for the site */
- img#pic {
+  .pic img {
     max-width: 100%;
     max-height: 100%;
   }
-   .logo img {
-  height: 100px;
+  .logo img {
+    height: 100px;
     width: 100px;
   }
-img#pic1 {
-    max-width: 50%;
-    max-height: 50%;
-  }
+    
+    form {
+      height: 40px;
+    }
+
+    input[type="radio"][class=".col-md-6"] {
+      position: absolute;
+      bottom: 0;
+      width: 60px;
+      height: 30px;
+      opacity: 0;
+      margin: 0 0 0 0;
+    }
+    input[type="radio"][class=".col-md-6"][value="dislike"] {
+      right: 30px;
+    }
+    input[type="radio"] + label[for="custom"]{
+      position: absolute;
+      bottom: 0;
+      clear: none;
+      cursor: pointer;
+      width: 60px;
+      height: 30px;
+      z-index: -1;
+      margin: 0 0 0 0;
+    }
+    input[type="radio"][value="like"] + label[for="custom"]{
+      background:url(resources/pictures/like.jpg) no-repeat;
+      background-size: 100% 100%;
+    }
+
+    input[type="radio"][value="dislike"] + label[for="custom"]{
+      right: 30px;
+      background:url(resources/pictures/dislike.jpg) no-repeat;
+      background-size: 100% 100%;
+    }
+
+    input[type="radio"]:checked[value="like"] + label[for="custom"]{
+      background:url(resources/pictures/likeselected.jpg) no-repeat;
+      background-size: 100% 100%;
+    }
+
+    input[type="radio"]:checked[value="dislike"] + label[for="custom"]{
+      right: 30px;
+      background:url(resources/pictures/dislikeselected.jpg) no-repeat;
+      background-size: 100% 100%;
+    }
+
   /*removed a change */
   /* css for the button on first page */
       #butin{ {background-color:rgba(255,0,0,.1);}}

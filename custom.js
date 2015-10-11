@@ -7,7 +7,7 @@ $('.contenitore').hover(function() {
         height: 400,
         top: -80,
         left: -45
-    }, 'fast');
+    }, 'slow');
   $(this).animate().css('box-shadow', '0 0 5px #000');
     $(this).css({
         zIndex: 100 
@@ -19,7 +19,7 @@ $('.contenitore').hover(function() {
         height: 240,
         top: 0,
         left: 0
-    }, 'slow');
+    }, 100);
     $(this).css({
         zIndex: 1
     });
@@ -59,7 +59,7 @@ function sendnet(){
       sendnet();
     }
     }
-    /*    function showwor)ds() {
+    /*    function showwords() {
       $(".words1").hide(slow);
       $(".words2").show(slow);
     }
@@ -67,6 +67,58 @@ function sendnet(){
 
 });
 
+//form submission function
+
+function submitValues() {
+  var fields = $(":input").serializeArray();
+  //replace with server technology
+  var oldfields = JSON.parse(localStorage.getItem('results'));
+  //end replace
+  for(var i in fields)
+  {
+    if(fields[i].name != undefined)
+        fields[i].name = parseInt(fields[i].name.substring(4), 10);
+    fields[i].value == "like" ? fields[i].value = true : fields[i].value = false;
+  }
+  Array.prototype.push.apply(fields,oldfields);
+  //replace with server technology
+  localStorage.setItem('results', JSON.stringify(fields));
+  //end replace
+  $("input[type='radio']").attr("checked", false);
+}
+
+$("#submitform").click(submitValues);
+
+//form clear function
+
+$("#clearform").click(function() {
+  $("input[type='radio']").attr("checked", false);
+});
+
+//form retrieve function
+
+function loadBoard() {
+  //replace with server technology
+  var fields = JSON.parse(localStorage.getItem('results'));
+  //end replace
+  var ratings = {};
+  for(var i in fields)
+  {
+    if(ratings[fields[i].name] == undefined)
+      fields[i].value ? ratings[fields[i].name] = 1 : ratings[fields[i].name] = -1;
+    else
+      fields[i].value ? ratings[fields[i].name]++ : ratings[fields[i].name]--;
+  }
+  var tableappend = "";
+  for(var i in ratings)
+    tableappend += "<tr><td>" + i + "</td><td>" + ratings[i] + "</td><td>10</td></tr>";
+
+  $("tbody#results").append(tableappend);
+}
+
+$("tbody#results").ready(loadBoard);
+
+//something to do with sliders
 
 $(window).ready(function(){
   $('.list').bxSlider({

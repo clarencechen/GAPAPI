@@ -16,7 +16,6 @@
  <script src="head/jquery/dist/jquery.min.js" type="text/javascript"></script>
 
  <script src="head/jquery/dist/jquery.min.js"></script>
- <script language="javascript" type="text/javascript" src="custom.js"></script>
  <script language="javascript" type="text/javascript" src="head/jquery/dist/jquery.js"></script>
  <script language="javascript" type="text/javascript" src="head/jquery-ui/jquery-ui.min.js"></script>
  <!-- bxSlider Javascript file -->
@@ -24,143 +23,319 @@
  <script language="javascript" type="text/javascript" src="dist/js/jquery.bxslider.min.js"></script>
  <!-- bxSlider CSS file -->
  <link href="dist/js/jquery.bxslider.css" rel="stylesheet"/>
-
+ <link rel="stylesheet" type="text/css" href="mycss.css"/>
 
  <!-- this is the font for the vizzilo page -->
  <!-- end of the font for the page-->
 
  <!-- this is the the css for the heading to make it look like the first page -->
 
- <style type="text/css">
- #heading_2 {   clear: both;
-  z-index: 100;
-  margin: 1em auto;
-  display: block;
-  border: none;
-  font-size: 5px;
-  font-family: Vizilo;
-  background: transparent;
-  color: #330;
-  text-shadow: 0 0 .3em white;}
-  #main_background { background: navy; } 
-  #column1 { background: #262623; }
-  #column2 { background: #8A0000; }
-  #column3 { background: navy; }
-  #column4 { background: #E37676; }
-  </style>
-
-
-</script>
-
 </head>
 
 <body id ="main_background" class="section">
-  <nav class="navbar navbar-inverse">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="homepage.html" id="title">GAP</a>
-      </div>
+	<nav class="navbar navbar-inverse">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="homepage.html" class="title">GAP</a>
+		</div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-static-top" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="voting.html" id="text">voting<span class="sr-only">(current)</span></a></li>
-          <li><a href="leaderboards.html" id="text">leaderboards</a></li>
-          <!-- check to see if user is already signed in then see make it changed to something like "signed in as"user"!"-->
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    <section id="Top" class="container-fluid section">
-    <div id="heading" class=" container span4"> 
-      <h1 id = "title"><img title="this is where the logo goes" id="pic"src="resources/pictures/logowords.png"/></h1>
-    </div>
-  </section>
-  <section id="text" class="container-fluid">
-    <div id="column4" class="container-fluid">
-      <div class="container col-md-4 ">
-        <ul class="list container-fluid">
-          <li><img id="pic"src="resources/pictures/Models Gap/B&S1.jpg"/>
-            <form action="demo_form.asp">
-              <input type="image" src="resources/pictures/hot.png" alt="Submit" id ="
-              pic1" class=".col-md-6"><input type="image" src="resources/pictures/cold.png" alt="Submit" id ="
-              pic1" class=".col-md-6">
-            </form></li>
-            <li><img id="pic"src="resources/pictures/Models Gap/B&S2.jpg"/>            <form action="#point">
-              <input type="image" src="resources/pictures/hot.png" alt="Submit" id ="
-              pic1" class=".col-md-6"><input type="image" src="resources/pictures/cold.png" alt="Submit" id ="
-              pic1" class=".col-md-6">
-            </form></li>
-            <li><img id="pic"src="resources/pictures/Models Gap/B&S3.jpg" />            <form action="#point">
-              <input type="image" src="resources/pictures/hot.png" alt="Submit" id ="
-              pic1" class=".col-md-6"><input type="image" src="resources/pictures/cold.png" alt="Submit" id ="
-              pic1" class=".col-md-6">
-            </form></li>
-            <li><img id="pic"src="resources/pictures/Models Gap/B&S4.jpg"/>             <form action="#point">
-              <input type="image" src="resources/pictures/hot.png" alt="Submit" id ="
-              pic1" class=".col-md-6"><input type="image" src="resources/pictures/cold.png" alt="Submit" id ="
-              pic1" class=".col-md-6">
-            </form></li>
-          </ul>
-          <h3 class="container-fluid">Summer Looks</h3>
-        </div>
-        <div class="container col-md-4">
-          <ul class="list container-fluid">
-            <li><img id="pic"src="resources/pictures/Models Gap/D1.jpg" />           <form action="#point">
-              <input type="image" src="resources/pictures/hot.png" alt="Submit" id ="
-              pic1" class=".col-md-6"></form> <form action="#point"><input type="image" src="resources/pictures/cold.png" alt="Submit" id ="
-              pic1" class=".col-md-6">
-            </form></li>
-            <li><img id="pic"src="resources/pictures/Models Gap/D2.jpg" t/>            <form action="#point">
-              <input type="image" src="resources/pictures/hot.png" alt="Submit" id ="
-              pic1" class=".col-md-6"></form> <form action="#point"><input type="image" src="resources/pictures/cold.png" alt="Submit" id ="
-              pic1" class=".col-md-6">
-            </form></li>
-            <li><img id="pic"src="resources/pictures/Models Gap/D3.jpg" />            <form action="#point">
-              <input type="image" src="resources/pictures/hot.png" alt="Submit" id ="
-              pic1" class=".col-md-6"></form> <form action="#point"><input type="image" src="resources/pictures/cold.png" alt="Submit" id ="
-              pic1" class=".col-md-6">
-            </form></li>
-            <li><img id="pic"src="resources/pictures/Models Gap/D4.jpg" />            <form action="#point">
-              <input type="image" src="resources/pictures/hot.png" alt="Submit" id ="
-              pic1" class=".col-md-6"></form> <form action="#point"><input type="image" src="resources/pictures/cold.png" alt="Submit" id ="
-              pic1" class=".col-md-6">
-            </form></li>
-          </ul>   
-          <h3 class="container-fluid">Fall Looks</h3>
-        </div>
-        <div class="container-fluid col-md-4">
-          <ul class="list container-fluid">
-            <li><img id="pic"src="resources/pictures/Models Gap/DR1.jpg" />             <form action="#point">
-              <input type="image" src="resources/pictures/hot.png" alt="Submit" id ="
-              pic1" class=".col-md-6"><input type="image" src="resources/pictures/cold.png" alt="Submit" id ="
-              pic1" class=".col-md-6">
-            </form></li>
-            <li><img id="pic"src="resources/pictures/Models Gap/DR2.jpg" />            <form action="#point">
-              <input type="image" src="resources/pictures/hot.png" alt="Submit" id ="
-              pic1" class=".col-md-6"><input type="image" src="resources/pictures/cold.png" alt="Submit" id ="
-              pic1" class=".col-md-6">
-            </form></li>
-            <li><img id="pic"src="resources/pictures/Models Gap/DR3.jpg" />            <form action="#point">
-              <input type="image" src="resources/pictures/hot.png" alt="Submit" id ="
-              pic1" class=".col-md-6"><input type="image" src="resources/pictures/cold.png" alt="Submit" id ="
-              pic1" class=".col-md-6">
-            </form></li>
-            <li><img id="pic"src="resources/pictures/Models Gap/DR4.jpg" />            <form action="#point">
-              <input type="image" src="resources/pictures/hot.png" alt="Submit" id ="
-              pic1" class=".col-md-6"><input type="image" src="resources/pictures/cold.png" alt="Submit" id ="
-              pic1" class=".col-md-6">
-            </form></li>
-          </ul>  
-          <h3 class="container-fluid">Everyday looks</h3>
-        </div>
-      </div>
-    </section>
-  </body>
-  </html>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse navbar-static-top" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="voting.html" id="text">voting<span class="sr-only">(current)</span></a></li>
+			<li><a href="leaderboards.html" id="text">leaderboards</a></li>
+			<!-- check to see if user is already signed in then see make it changed to something like "signed in as"user"!"-->
+		</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<section id="Top" class="container-fluid section">
+	<div id="heading" class=" container span4"> 
+		<h1 class = "title"><img class="pic" src="resources/pictures/gaplogo.png"/></h1>
+		<h1 class = "title">Gap4Lyfe</h1>
+	</div>
+	</section>
+
+
+	<section id="womens" class="container-fluid">
+		<div id="summary">
+			<h1 class="summary">Women's Styles</h1>
+		</div>
+		<div id="column4" class="container-fluid">
+			<div class="container-fluid col-md-4 ">
+			<ul class="list container-fluid">
+			<li>
+			<img class="pic" src="resources/pictures/women/B&S1.jpg"/>
+				<form>
+				<input type="radio" name="vote0" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote0" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/women/B&S2.jpg"/>
+				<form>
+				<input type="radio" name="vote1" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote1" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/women/B&S3.jpg" />
+				<form>
+				<input type="radio" name="vote2" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote2" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/women/B&S4.jpg"/>
+				<form>
+				<input type="radio" name="vote3" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote3" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			</ul>
+			<h3 class="container-fluid">Summer Looks</h3>
+			</div>
+			<div class="container-fluid col-md-4">
+			<ul class="list container-fluid">
+			<li>
+				<img class="pic" src="resources/pictures/women/D1.jpg" />
+				<form>
+				<input type="radio" name="vote4" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote4" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/women/D2.jpg" t/>
+				<form>
+				<input type="radio" name="vote5" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote5" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/women/D3.jpg" />
+				<form>
+				<input type="radio" name="vote6" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote6" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/women/D4.jpg" />
+				<form>
+				<input type="radio" name="vote7" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote7" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			</ul>   
+			<h3 class="container-fluid">Fall Looks</h3>
+			</div>
+			<div class="container-fluid col-md-4">
+			<ul class="list container-fluid">
+			<li>
+				<img class="pic" src="resources/pictures/women/DR1.jpg" />
+				<form>
+				<input type="radio" name="vote8" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote8" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/women/DR2.jpg" />
+				<form>
+				<input type="radio" name="vote9" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote9" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/women/DR3.jpg" />
+				<form>
+				<input type="radio" name="vote10" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote10" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/women/DR4.jpg" />
+				<form>
+				<input type="radio" name="vote11" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote11" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			</ul>  
+			<h3 class="container-fluid">Everyday looks</h3>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section id="mens" class="container-fluid">
+		<div id="summary">
+			<h1 class="summary">Men's Styles</h1>
+		</div>		
+		<div id="column4" class="container-fluid">
+			<div class="container-fluid col-md-4 ">
+			<ul class="list container-fluid">
+			<li>
+			<img class="pic" src="resources/pictures/men/A1.jpg"/>
+				<form>
+				<input type="radio" name="vote12" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote12" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/men/A2.jpg"/>
+				<form>
+				<input type="radio" name="vote13" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote13" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/men/A3.jpg" />
+				<form>
+				<input type="radio" name="vote14" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote14" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/men/A4.jpg"/>
+				<form>
+				<input type="radio" name="vote15" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote15" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			</ul>
+			<h3 class="container-fluid">Summer Looks</h3>
+			</div>
+			<div class="container-fluid col-md-4">
+			<ul class="list container-fluid">
+			<li>
+				<img class="pic" src="resources/pictures/men/F1.jpg" />
+				<form>
+				<input type="radio" name="vote16" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote16" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/men/F2.jpg" t/>
+				<form>
+				<input type="radio" name="vote17" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote17" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/men/F3.jpg" />
+				<form>
+				<input type="radio" name="vote18" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote18" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/men/F4.jpg" />
+				<form>
+				<input type="radio" name="vote19" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote19" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			</ul>   
+			<h3 class="container-fluid">Formal Jackets</h3>
+			</div>
+			<div class="container-fluid col-md-4">
+			<ul class="list container-fluid">
+			<li>
+				<img class="pic" src="resources/pictures/men/J1.jpg" />
+				<form>
+				<input type="radio" name="vote20" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote20" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/men/J2.jpg" />
+				<form>
+				<input type="radio" name="vote21" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote21" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/men/J3.jpg" />
+				<form>
+				<input type="radio" name="vote22" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote22" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			<li>
+				<img class="pic" src="resources/pictures/men/J4.jpg" />
+				<form>
+				<input type="radio" name="vote23" value="like" class = ".col-md-6">
+				<label for="custom"></label>
+				<input type="radio" name="vote23" value="dislike" class = ".col-md-6">
+				<label for="custom"></label>
+				</form>
+			</li>
+			</ul>  
+			<h3 class="container-fluid">Casual Jackets</h3>
+			</div>
+		</div>
+	</section>
+	<section id="submitting" class="container-fluid">
+		<div id="column6" class="container-fluid">
+			<div class="container-fluid col-md-6">
+				<button id="submitform">Submit Selections</button>
+			</div>
+			<div class="container-fluid col-md-6">
+				<button id="clearform">Clear Selection</button>
+			</div>
+		</div>
+	</section>
+	<script language="javascript" type="text/javascript" src="custom.js"></script>
+ </body>
+</html>
