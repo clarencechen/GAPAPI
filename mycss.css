@@ -162,6 +162,8 @@ font-family: Vizilo;
   clear: both;
 }
 button {
+  width: 200px;
+  height: 100px;
   margin-left: 35%;
   margin-right: 35%;
 }

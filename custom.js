@@ -101,17 +101,20 @@ function loadBoard() {
   //replace with server technology
   var fields = JSON.parse(localStorage.getItem('results'));
   //end replace
-  var ratings = {};
+  var likes = {};
+  var dislikes = {};
   for(var i in fields)
   {
-    if(ratings[fields[i].name] == undefined)
-      fields[i].value ? ratings[fields[i].name] = 1 : ratings[fields[i].name] = -1;
+    if(likes[fields[i].name] == undefined && fields[i].value == true)
+      likes[fields[i].name] = 1;
+    else if(dislikes[fields[i].name] == undefined && fields[i].value == false)
+      dislikes[fields[i].name] = 1;
     else
-      fields[i].value ? ratings[fields[i].name]++ : ratings[fields[i].name]--;
+      fields[i].value ? likes[fields[i].name]++ : dislikes[fields[i].name]++;
   }
   var tableappend = "";
-  for(var i in ratings)
-    tableappend += "<tr><td>" + i + "</td><td>" + ratings[i] + "</td><td>10</td></tr>";
+  for(var j = 0; j < 24; j++)
+    tableappend += "<tr><td>" + j + "</td><td>" + (likes[j] == undefined ? 0 : likes[j]) + "</td><td>" + (dislikes[j] == undefined ? 0 : dislikes[j]) + "</td><td>10</td></tr>";
 
   $("tbody#results").append(tableappend);
 }
