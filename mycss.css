@@ -103,10 +103,10 @@
 
 
 /* heading for the site */
-.section h1, .section h3{
+h1, h3{
   text-align:center;
 }
-.section h1{
+h1{
   font-size: 50px;
   font-weight:bold;
   text-transform: uppercase;
@@ -115,7 +115,7 @@
   -webkit-text-shadow: 1px 1px 1px #fff;
   -moz-text-shadow: 1px 1px 1px #fff;
 }
-.section h3{
+h3{
   color: #000;
   font-size: 20px;
   font-weight:lighter; 
@@ -128,13 +128,15 @@
 font-family: Vizilo;
   font-size: 20px;
   font-weight: lighter;
-  text-align:center;
   color:black;
   left: 17em;
   top: 7em;
   text-align: center;
 }
-
+#thanks p{
+  text-align: center;
+  color: white;
+}
 .column {
   text-shadow: 1px 1px 1px #fff;
   -webkit-text-shadow: 1px 1px 1px #fff;

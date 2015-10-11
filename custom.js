@@ -84,10 +84,15 @@ function submitValues() {
   //replace with server technology
   localStorage.setItem('results', JSON.stringify(fields));
   //end replace
-  $("input[type='radio']").attr("checked", false);
+
 }
 
-$("#submitform").click(submitValues);
+$("#submitform").click(function(){
+  submitValues();
+  $("input[type='radio']").attr("checked", false);
+  $("p#thanks").append("");
+  window.location.href = "thanks.html";
+});
 
 //form clear function
 
